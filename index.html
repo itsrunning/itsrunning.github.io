@@ -1,88 +1,50 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
     <title>Its Running !!! by itsrunning</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
-    <script type='text/javascript'>
-        google.load('visualization', '1', {packages:['table']});
-        google.setOnLoadCallback(drawTable);
-        function drawTable() {
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', '');
-            data.addColumn('string', 'Webapp');
-            data.addColumn('string', 'iOS');
-            data.addColumn('string', 'Android');
-            data.addRows([
-                ['Ruby', '<a href="https://github.com/itsrunning/ruby_cucumber_capybara">Cucumber-Capybara</a>, <a href="https://github.com/itsrunning/ruby_cucumber_capypage">Cucumber-Capypage</a>', '<a href="https://github.com/itsrunning/ios_appium_ruby_capypage">Cucumber-Appium</a>', '<a href="https://github.com/itsrunning/android_appium_cucumber_ruby">Cucumber-Appium</a>'],
-                ['Java', '<a href="https://github.com/itsrunning/Webdriver_Java_TestNG_Gradle">TestNG-Webdriver</a>', '<a href="https://github.com/itsrunning/iOS_Appium_Java">TestNG-Appium</a>', '-'],
-                ['JavaScript', '<a href="https://github.com/itsrunning/JavaScript_WebDrive_Cucumber">Cucumber-Webdriver</a>', '-', '-'],
-                ['.Net C#', '<a href="https://github.com/itsrunning/Webdriver_C_NUnit">NUnit-Webdriver</a>', '-', '-'],
-
-            ]);
-            data.setColumnProperty(1, {allowHTML: true});
-            data.setColumnProperty(2, {allowHTML: true});
-            data.setColumnProperty(3, {allowHTML: true});
-
-            var table = new google.visualization.Table(document.getElementById('table_div'));
-
-            table.draw(data, {allowHtml: true, showRowNumber: false});
-        }
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-</head>
-<body>
-
-<header>
-    <h1>Its Running !!!</h1>
-    <p>Clone &gt; Build &gt;&gt; Run</p>
-</header>
-
-<div id="banner">
-    <span id="logo"></span>
-
-    <a href="https://github.com/itsrunning" class="button fork"><strong>View On GitHub</strong></a>
-</div><!-- end banner -->
-
-<div class="wrapper">
-    <nav>
-        <ul></ul>
-    </nav>
-    <section id="main_content" class="inner">
-        <h3>
-            <a name="why-this-initiative" class="anchor" href="#why-this-initiative"><span class="octicon octicon-link"></span></a>Why this initiative?</h3>
-
-        <p>We work for different projects over time and build automation frameworks involving different tools/tech-stack. A library of such frameworks will be a great place to learn, utilize, share and evolve our knowledge as a community. This is the visioning behind this open-source initiative by <a href="http://www.thoughtworks.com/insights/software-testing">ThoughtWorks QA Community</a>. </p>
-
-        <h3><a name="inventory-so-far" class="anchor" href="#inventory-so-far"><span class="octicon octicon-link"></span></a>Inventory so far...</h3>
-
-        <div id='table_div'></div>
-        <br>
-
-        <h3><a name="basically" class="anchor" href="#inventory-so-far"><span class="octicon octicon-link"></span></a>The Basics </h3>
-        <p>Every repo has few sample scenarios in executable state. This is ensured by integration with Travis (a hosted continuous integration service). Secondly, we are working towards self-contained repos, meaning every repo will encompass its test code, dependencies managed, and application-under-testing included.</p>
-
-        <h3><a name="interested-to-join-the-community" class="anchor" href="#interested-to-join-the-community?"><span class="octicon octicon-link"></span></a>Like to join the community?</h3>
-
-        <p><b>Checkout</b> the repository you are interested on and utilize it to learn or jump-start your project framework. After all, its the usage which justifies any effort.</p>
-        <p><b>Share</b> the framework you are working on. This will enrich our library and grow our expertise as a community.</p>
-        <p><b>Report</b> issues or observations you come across, which will help in evolving existing frameworks.</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Its Running !!!</h1>
+      <h2 class="project-tagline">Clone &gt; Build &gt;&gt; Run</h2>
     </section>
 
-    <footer class="outer">
-        <p><small>Hosted on GitHub Pages &mdash; A <a href="http://www.thoughtworks.com/insights/software-testing">ThoughtWorks QA Community</a> initiative</small></p>
-    </footer>
-</div>
-<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <section class="main-content">
+      <h3>
+<a id="one-effective-and-simple-way-of-giving-back-to-the-open-source-community-can-be-extracting-a-sample-automation-framework-from-our-projects-and-share-it-as-open-source" class="anchor" href="#one-effective-and-simple-way-of-giving-back-to-the-open-source-community-can-be-extracting-a-sample-automation-framework-from-our-projects-and-share-it-as-open-source" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>"One <strong>effective</strong> and <strong>simple</strong> way of giving back to the open-source community can be extracting a sample automation framework from our projects and share it as open-source"</em>
+</h3>
 
-</body>
+<p><em><strong>effective:</strong></em> We all get to work in different projects with different tech stacks. Over time, as a community we would have worked in multiple automation frameworks each of which is unique in terms of the elements/tools used. A collection of all these automation frameworks in their bare-bones, shared as one repository can be quite useful for anyone exploring options to build an automation framework.</p>
+
+<p><em><strong>simple:</strong></em> It is as simple as spending couple of hours (or perhaps little more) to write a bare-bones version of our project automation framework to include a sample automation test which is executable by following the Readme instructions.</p>
+
+<p>In addition to the above, in the process of doing this one can get,</p>
+
+<ul>
+<li>a more detailed understanding of their own project framework if he/she didn't get to be part of the initial setup days</li>
+<li>to learn what is Travis, how to configure this cloud based CI to execute the sample tests included in the repo for every check-in and how to radiate the current build status as part of the Readme page</li>
+<li>to learn lot more including how to write a github Readme page, managing pull-requests from interested contributors after the framework is checked-in, etc.,</li>
+</ul>
+
+<p>This is the idea conceived by Deepak Paramasivam and with the effort of our ThoughtWorks Chennai QA community the idea materialised. Though this initiative took shape within ThoughtWorks premises, this repo is open to anyone and everyone reading this. You are welcome to check-out/download and more importantly join hands in authoring pull-requests (enriching the existing frameworks) and creating new frameworks (from scratch). </p>
+
+<p>Currently, it has sample frameworks across web-automation, mobile-automation, performance, etc., The vision is to keep this an active collection of repos, with new sample repos getting added as part of every project we get to work on. </p>
+
+<p><a href="https://github.com/itsrunning">Proceed here</a> to checkout the repository.</p>
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
 </html>
